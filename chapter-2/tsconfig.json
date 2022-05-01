@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "lib": ["ES2015"], // TSC가 실행 환경에서 이용할 수 있다고 가정하는 API
+        "module": "CommonJS", // TSC가 코드를 컴파일할 대상 모듈 시스템
+        "outDir": "dist", // 생성된 자바스크립트 코드를 출력할 디렉터리
+        "sourceMap": true, 
+        "strict": true, // 유효하지 않은 코드를 확인할 때 가능한 한 엄격하게 검사. 이 모드를 사용하면 코드가 적절하게 타입을 갖추도록 강제할 수 있다.
+        "target": "ES2015" // TSC가 코드를 컴파일 할 자바스크립트 버전
+    },
+    "include": [ //TSC가 타입스크립트 파일을 찾을 디렉터리
+        "src"
+    ]
+}
